@@ -1,0 +1,25 @@
+vehicle_param {
+  brand: MK_MINI
+  vehicle_id {
+      other_unique_id: "mini"
+  }
+  front_edge_to_center: 0.72
+  back_edge_to_center: 0.12
+  left_edge_to_center: 0.3
+  right_edge_to_center: 0.3
+
+  length: 0.84
+  width: 0.69
+  height: 0.21
+  min_turn_radius: 2.0
+  max_acceleration: 2.0
+  max_deceleration: -6.0
+  max_steer_angle: 0.523
+  max_steer_angle_rate: 6.98131700798
+  steer_ratio: 1
+  wheel_base: 0.60
+  wheel_rolling_radius: 0.335
+  max_abs_speed_when_stopped: 0.0
+  brake_deadzone: 14.5
+  throttle_deadzone: 15.7
+}

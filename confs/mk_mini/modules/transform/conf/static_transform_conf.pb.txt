@@ -1,0 +1,13 @@
+extrinsic_file {
+    frame_id: "imu"
+    child_frame_id: "lidar16_back"
+    file_path: "/apollo/modules/drivers/lidar/params/main_extrinsics.yaml"
+    enable: true
+}
+
+extrinsic_file {
+    frame_id: "localization"
+    child_frame_id: "imu"
+    file_path: "/apollo/modules/localization/msf/params/novatel_localization_extrinsics.yaml"
+    enable: true
+}

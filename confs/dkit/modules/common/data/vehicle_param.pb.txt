@@ -1,0 +1,51 @@
+vehicle_param {
+  brand: CH
+  vehicle_id {
+      other_unique_id: "ch"
+  }
+  front_edge_to_center: 1.34844
+  back_edge_to_center: 0.38228
+  left_edge_to_center: 0.425
+  right_edge_to_center: 0.425
+
+  length: 1.73072
+  width: 0.850
+  height: 1.49
+  min_turn_radius: 2.36
+  max_acceleration: 2.0
+  max_deceleration: -6.0
+  max_steer_angle: 0.380
+  max_steer_angle_rate: 0.48
+  min_steer_angle_rate: 0
+  steer_ratio: 0.9825
+  wheel_base: 0.96123
+  wheel_rolling_radius: 0.215
+  max_abs_speed_when_stopped: 0.15
+
+  brake_deadzone: 3.0
+  throttle_deadzone: 15.0
+
+  steering_latency_param
+  {
+      dead_time: 0.0
+      rise_time: 0.0
+      peak_time: 0.0
+      settling_time: 0.0
+  }
+
+  throttle_latency_param
+  {
+      dead_time: 0.0
+      rise_time: 0.0
+      peak_time: 0.0
+      settling_time: 0.0
+  }
+
+  brake_latency_param
+  {
+      dead_time: 0.0
+      rise_time: 0.0
+      peak_time: 0.0
+      settling_time: 0.0
+  }
+}

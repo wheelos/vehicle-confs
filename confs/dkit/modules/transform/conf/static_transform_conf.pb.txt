@@ -1,0 +1,34 @@
+extrinsic_file {
+    frame_id: "imu"
+    child_frame_id: "rslidar_up"
+    file_path: "/apollo/modules/drivers/lidar/params/rslidar_up_extrinsics.yaml"
+    enable: true
+}
+
+extrinsic_file {
+    frame_id: "localization"
+    child_frame_id: "imu"
+    file_path: "/apollo/modules/drivers/gnss/params/imu_extrinsics.yaml"
+    enable: true
+}
+
+extrinsic_file {
+    frame_id: "rslidar_up"
+    child_frame_id: "camera_front_6mm"
+    file_path: "/apollo/modules/drivers/camera/params/front_6mm_extrinsics.yaml"
+    enable: true
+}
+
+extrinsic_file {
+    frame_id: "rslidar_up"
+    child_frame_id: "camera_front_12mm"
+    file_path: "/apollo/modules/drivers/camera/params/front_12mm_extrinsics.yaml"
+    enable: true
+}
+
+extrinsic_file {
+    frame_id: "rslidar_up"
+    child_frame_id: "radar_front"
+    file_path: "/apollo/modules/drivers/radar/params/radar_front_extrinsics.yaml"
+    enable: true
+}

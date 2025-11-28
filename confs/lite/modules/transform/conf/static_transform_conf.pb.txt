@@ -1,0 +1,55 @@
+extrinsic_file {
+    frame_id: "imu"
+    child_frame_id: "lidar_top"
+    file_path: "/apollo/modules/drivers/lidar/params/lidar_top_extrinsics.yaml"
+    enable: true
+}
+
+extrinsic_file {
+    frame_id: "localization"
+    child_frame_id: "imu"
+    file_path: "/apollo/modules/localization/msf/params/novatel_localization_extrinsics.yaml"
+    enable: true
+}
+
+extrinsic_file {
+    frame_id: "lidar_top"
+    child_frame_id: "camera_front"
+    file_path: "/apollo/modules/perception/data/params/camera_front_extrinsics.yaml"
+    enable: true
+}
+
+extrinsic_file {
+    frame_id: "lidar_top"
+    child_frame_id: "camera_back"
+    file_path: "/apollo/modules/perception/data/params/camera_back_extrinsics.yaml"
+    enable: true
+}
+
+extrinsic_file {
+    frame_id: "lidar_top"
+    child_frame_id: "camera_left"
+    file_path: "/apollo/modules/perception/data/params/camera_left_extrinsics.yaml"
+    enable: true
+}
+
+extrinsic_file {
+    frame_id: "lidar_top"
+    child_frame_id: "camera_right"
+    file_path: "/apollo/modules/perception/data/params/camera_right_extrinsics.yaml"
+    enable: true
+}
+
+extrinsic_file {
+    frame_id: "lidar_top"
+    child_frame_id: "radar_front"
+    file_path: "/apollo/modules/perception/data/params/radar_front_extrinsics.yaml"
+    enable: true
+}
+
+extrinsic_file {
+    frame_id: "lidar_top"
+    child_frame_id: "radar_rear"
+    file_path: "/apollo/modules/perception/data/params/radar_rear_extrinsics.yaml"
+    enable: true
+}

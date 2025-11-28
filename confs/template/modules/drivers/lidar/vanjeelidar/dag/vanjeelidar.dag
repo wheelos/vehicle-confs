@@ -1,0 +1,17 @@
+module_config {
+    module_library : "/apollo/bazel-bin/modules/drivers/lidar/vanjeelidar/libvanjeelidar_component.so"
+    components {
+        class_name : "VanjeelidarComponent"
+        config {
+          name : "VanjeeLiDAR_Driver_Left"
+          config_file_path : "/apollo/modules/drivers/lidar/vanjeelidar/conf/vanjeelidar_left.pb.txt"
+        }
+    }
+    components {
+        class_name : "VanjeelidarComponent"
+        config {
+          name : "VanjeeLiDAR_Driver_Right"
+          config_file_path : "/apollo/modules/drivers/lidar/vanjeelidar/conf/vanjeelidar_right.pb.txt"
+        }
+    }
+}

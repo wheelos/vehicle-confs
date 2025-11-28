@@ -1,0 +1,12 @@
+version: 1.0.0
+config_id: e64302ec-3aa3-4074-895d-be4b662c0f1c
+created_at: '2025-08-29T11:15:43.992701Z'
+updated_at: '2025-08-29T11:15:43.992744Z'
+maintainers:
+- name: QA Team
+  email: qa@wheelos.cn
+  role: Quality Assurance
+vehicle_vin: wheelos001
+hardware_hash: 1.0.0
+wheelos_hash: 1.0.0
+description: Created from template 'template'
