@@ -28,7 +28,7 @@ binning_x: 0
 binning_y: 0
 distortion_model: plumb_bob
 header:
-  frame_id: 'camera_front_6mm'
+  frame_id: 'front_6mm'
   seq: 0
   stamp:
     nsecs: 0

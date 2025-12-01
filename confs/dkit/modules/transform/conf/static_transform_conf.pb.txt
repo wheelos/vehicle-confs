@@ -14,14 +14,14 @@ extrinsic_file {
 
 extrinsic_file {
     frame_id: "rslidar_up"
-    child_frame_id: "camera_front_6mm"
+    child_frame_id: "front_6mm"
     file_path: "/apollo/modules/drivers/camera/params/front_6mm_extrinsics.yaml"
     enable: true
 }
 
 extrinsic_file {
     frame_id: "rslidar_up"
-    child_frame_id: "camera_front_12mm"
+    child_frame_id: "front_12mm"
     file_path: "/apollo/modules/drivers/camera/params/front_12mm_extrinsics.yaml"
     enable: true
 }

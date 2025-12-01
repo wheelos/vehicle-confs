@@ -4,7 +4,7 @@ header:
   stamp:
     nsecs: 0
     secs: 0
-child_frame_id: camera_front_6mm
+child_frame_id: front_6mm
 transform:
   rotation:
     x: 0.5121270814486552

@@ -4,7 +4,7 @@ header:
     secs: 0
     nsecs: 0
   seq: 0
-child_frame_id: camera_front_12mm
+child_frame_id: front_12mm
 transform:
   rotation:
     x: -0.5090692569566782

@@ -3,7 +3,7 @@ header:
   stamp:
     secs: 0
     nsecs: 0
-  frame_id: camera_front_12mm
+  frame_id: front_12mm
 height: 1080
 width: 1920
 distortion_model: plumb_bob
