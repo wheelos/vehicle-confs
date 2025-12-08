@@ -1,0 +1,13 @@
+transform:
+  rotation:
+    x: 0.01087066
+    y: 0.02416105
+    z: -0.09564723
+    w: 0.99506265
+  translation:
+    x: -0.13264166
+    y: -1.47837737
+    z: 0.05346684
+header:
+  frame_id: lidar_left
+child_frame_id: lidar_right

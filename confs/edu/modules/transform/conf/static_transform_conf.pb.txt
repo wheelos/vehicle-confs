@@ -1,0 +1,27 @@
+extrinsic_file {
+    frame_id: "imu"
+    child_frame_id: "vanjeelidar_up"
+    file_path: "/apollo/modules/drivers/lidar/params/vanjeelidar_up_extrinsics.yaml"
+    enable: true
+}
+
+extrinsic_file {
+    frame_id: "localization"
+    child_frame_id: "imu"
+    file_path: "/apollo/modules/drivers/gnss/params/imu_extrinsics.yaml"
+    enable: true
+}
+
+extrinsic_file {
+    frame_id: "vanjeelidar_up"
+    child_frame_id: "camera_front"
+    file_path: "/apollo/modules/drivers/camera/params/camera_front_extrinsics.yaml"
+    enable: true
+}
+
+extrinsic_file {
+    frame_id: "vanjeelidar_up"
+    child_frame_id: "radar_front"
+    file_path: "/apollo/modules/drivers/radar/params/radar_front_extrinsics.yaml"
+    enable: true
+}
