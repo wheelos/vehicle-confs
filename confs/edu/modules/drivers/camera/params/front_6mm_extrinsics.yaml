@@ -1,0 +1,18 @@
+header:
+  seq: 0
+  frame_id: vanjeelidar_up
+  stamp:
+    nsecs: 0
+    secs: 0
+child_frame_id: front_6mm
+transform:
+  rotation:
+    x: 0.5121270814486552
+    y: -0.4952145490739945
+    z: 0.5085295151609642
+    w: -0.483617757162077
+  translation:
+    x: 0.1569847911596298
+    y: 0.1694557219743729
+    z: -0.04481333494186401
+

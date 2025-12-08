@@ -1,0 +1,126 @@
+# Topics
+pointcloud_topic: "/apollo/sensor/vanjeelidar/up/PointCloud2"               # Point cloud data
+imu_topic: "/apollo/sensor/gnss/corrected_imu"                         # IMU data
+odom_topic: "/apollo/localization/pose"                   # IMU pre-preintegration odometry, same frequency as IMU
+gps_topic: "/apollo/sensor/gnss/best_pose"
+  # Frames
+lidar_frame: "vanjeelidar_up"
+baselink_frame: "lidar"
+odometry_frame: "odom"
+map_frame: "map"
+imu_frame: "imu"
+
+# GPS Settings
+use_imu_heading_initialization: true           # if using GPS data, set to "true"
+use_gps_elevation: false                      # if GPS elevation is bad, set to "false"
+gps_cov_threshold: 2.0                        # m^2, threshold for using GPS data
+pose_cov_threshold: 25.0                      # m^2, threshold for using GPS data
+
+# Export settings
+save_pcd: false                         
+save_pcd_directory: "/Downloads/LOAM/"        # in your home folder, starts and ends with "/". Warning: the code deletes "LOAM" folder then recreates it. See "mapOptimization" for implementation
+
+# Sensor Settings
+sensor: "velodyne"                            # lidar sensor type, 'velodyne' or 'ouster' or 'livox' or 'robosense'
+n_scan: 16                                  # number of lidar channel (i.e., Velodyne/Ouster: 16, 32, 64, 128, Livox Horizon: 6)
+horizon_scan: 1800                          # lidar horizontal resolution (Velodyne:1800, Ouster:512,1024,2048, Livox Horizon: 4000)
+downsample_rate: 1                           # default: 1. Downsample your data if too many points(line). i.e., 16 = 64 / 4, 16 = 16 / 1
+point_filter_num: 1                         # default: 3. Downsample your data if too many points(point). e.g., 16: 1, 32: 5, 64: 8
+lidar_min_range: 1.0                          # default: 1.0, minimum lidar range to be used
+lidar_max_range: 1000.0                       # default: 1000.0, maximum lidar range to be used
+
+# IMU Settings
+imu_type: 1                                  # 0: 6-axis  1: 9-axis
+imu_rate: 100.0
+imu_acc_noise: 3.9939570888238808e-03
+imu_gyr_noise: 1.5636343949698187e-03
+imu_acc_bias_n: 6.4356659353532566e-05
+imu_gyr_bias_n: 3.5640318696367613e-05
+imu_gravity: 9.789
+imu_rpy_weight: 0.01
+mapping_surf_leaf_size_indoor: 0.2                      # default: 0.4 - outdoor, 0.2 - indoor
+mapping_surf_leaf_size_outdoor: 0.4
+
+# robot motion constraint (in case you are using a 2D robot)
+z_tollerance: 1000
+rotation_tollerance: 1000                     # radians
+
+# CPU Params
+number_of_cores: 1                              # number of cores for mapping optimization
+mapping_process_interval: 0.2                  # seconds, regulate mapping frequency
+
+# Surrounding map
+surrounding_key_frame_adding_dist_threshold: 1.0   # meters, regulate keyframe adding threshold
+surrounding_key_frame_adding_angle_threshold: 0.2  # radians, regulate keyframe adding threshold
+surrounding_key_frame_density: 0.1               # meters, downsample surrounding keyframe poses   
+surrounding_key_frame_search_radius: 5.0         # meters, within n meters scan-to-map optimization (when loop closure disabled)
+surrounding_key_frame_map_leaf_size_indoor: 0.2           # downsample local map point cloud
+surrounding_key_frame_map_leaf_size_outdoor: 0.4
+
+# Loop closure
+loop_closure_enable_flag: true
+loop_closure_frequency: 1.0                     # Hz, regulate loop closure constraint add frequency
+surrounding_key_frame_size: 50                   # submap size (when loop closure enabled)
+history_key_frame_search_radius: 15.0             # meters, key frame that is within n meters from current pose will be considerd for loop closure
+history_key_frame_search_time_diff: 10.0           # seconds, key frame that is n seconds older will be considered for loop closure
+history_key_frame_search_num: 25                  # number of hostory key frames will be fused into a submap for loop closure
+loop_closure_icp_surf_leaf_size: 0.5               # downsample icp point cloud  
+history_key_frame_fitness_score: 0.3              # icp threshold, the smaller the better alignment
+
+# Visualization
+global_map_visualization_search_radius: 1000.0    # meters, global map visualization radius
+global_map_visualization_pose_density: 10.0       # meters, global map visualization keyframe density
+global_map_visualization_leaf_size: 1.0           # meters, global map visualization cloud density
+
+# save matched points and local map to folder
+enable_slam_debug_flag: false
+
+pose_path: "data/slam_tf"
+
+three_trace_file_path: "/3D-Pose.txt"
+six_trace_file_path: "/6D-Pose.txt"
+surf_file_path: "/surfPointCloud.txt"
+offset_file_path: "/gnss-map-offset.txt"
+
+trajectory_slam: "/apollo/data/trajectory_slam.txt"
+trajectory_slam_local: "/apollo/data/trajectory_slam_local.txt"
+trajectory_rtk: "/apollo/data/trajectory_rtk.txt"
+
+slam_pose_result: "/slam_pose_result.bin"
+
+# no use in indoor
+imu_gps_translation_x: 0
+imu_gps_translation_y: 0
+imu_gps_translation_z: 0
+
+local_map_downsize: true
+downsize_interval_distance: 4.0
+nearestk_search_distance_threshold: 2.0
+nearestk_search_angle_threshold: 0.05
+
+mean_filter_window_size: 20
+
+map_offset_x: 0
+map_offset_y: 0
+map_offset_z: 0
+
+slam_indoor_init_x: 0
+slam_indoor_init_y: 0
+
+# change init heading dynamicly, to init more easily
+init_yaw_auto_change: true
+# less than this init can be success, according to loam stage
+init_status_icp_threshold: 0.045
+
+# crop map or not
+crop_range_for_pointcloud: false
+x_left_boundary: -7
+x_right_boundary: 1.7
+y_back_boundary: -3.5
+y_front_boundary: 14.3
+
+slam_mode: LOCALIZATION
+debug_scan2map_visualization: true
+tf_enable: true
+sensor_using_system_time: false
+final_localization_using_kalman_filter: false

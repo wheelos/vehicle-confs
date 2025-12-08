@@ -1,0 +1,21 @@
+# 关闭所有输出
+unlogall
+# 以100hz输出gpchcx协议数据
+log com1 gpchcx ontime 0.01
+# 1hz输出gpgga数据
+log com1 gpgga ontime 1
+
+# 以下为车辆参数，具体数据需要替换为实际车辆的参数，配置后设备才可进入标定，未标定的状态下不会进入组合导航模式
+# 相关参数相关说明可以参考华测官方说明 https://drive.weixin.qq.com/s?k=AMoAdQdXAAw0CCrAsQ#/preview?fileId=s.1970325044032970.683704587e48_f.7004461973Cnd
+# 标定完成后无需再设置这些参数，否则需要重新标定
+# 若要进行配置，请打开以下注释
+insangle 0 0 0 5 5 5
+headingoffset 0 0 0 5.00 5.00 5.00
+ant2bodyoffset 0 0 -0.7 1.0 1.0 1.0
+ins2antoffset 0.0 0 0.4 1.0 1.0 1.0
+ant2outposoffset 2 0 0 -0.7
+wheeltread 0.65 0.81
+bodytype 2 0 0
+
+# 保存配置
+saveconfig

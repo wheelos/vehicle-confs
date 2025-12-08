@@ -1,0 +1,63 @@
+scenario_type:  ENTER_CAR_HALL
+enter_car_hall_config: {
+  max_tolerance_to_lat_distance: 0.02
+}
+
+stage_type: ENTER_CAR_HALL_DEFAULT_STAGE
+
+stage_config: {
+  stage_type: ENTER_CAR_HALL_DEFAULT_STAGE
+  enabled: true
+  task_type: PATH_BOUNDS_DECIDER
+  task_type: PIECEWISE_JERK_PATH_OPTIMIZER
+  task_type: PATH_ASSESSMENT_DECIDER
+  task_type: PATH_DECIDER
+  task_type: SPEED_BOUNDS_PRIORI_DECIDER
+  task_type: SPEED_HEURISTIC_OPTIMIZER
+  task_type: SPEED_DECIDER
+  task_type: SPEED_BOUNDS_FINAL_DECIDER
+  task_type: PIECEWISE_JERK_SPEED_OPTIMIZER
+
+  task_config: {
+    task_type: PATH_BOUNDS_DECIDER
+  }
+  task_config: {
+    task_type: PIECEWISE_JERK_PATH_OPTIMIZER
+    piecewise_jerk_path_optimizer_config {
+    default_path_config {
+      l_weight: 40000.0
+      dl_weight: 0.01
+      ddl_weight: 0.01
+      dddl_weight: 20000.0
+    }
+    lane_change_path_config {
+      l_weight: 1.0
+      dl_weight: 5.0
+      ddl_weight: 800.0
+      dddl_weight: 30000.0
+    }
+  }
+
+  }
+  task_config: {
+    task_type: PATH_ASSESSMENT_DECIDER
+  }
+  task_config: {
+    task_type: PATH_DECIDER
+  }
+  task_config: {
+    task_type: SPEED_BOUNDS_PRIORI_DECIDER
+  }
+  task_config: {
+    task_type: SPEED_HEURISTIC_OPTIMIZER
+  }
+  task_config: {
+    task_type: SPEED_DECIDER
+  }
+  task_config: {
+    task_type: SPEED_BOUNDS_FINAL_DECIDER
+  }
+  task_config: {
+    task_type: PIECEWISE_JERK_SPEED_OPTIMIZER
+  }
+}

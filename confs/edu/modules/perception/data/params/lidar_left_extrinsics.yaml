@@ -1,0 +1,13 @@
+transform:
+  rotation:
+    x: 0.0
+    y: 0.0
+    z: 0.70710678
+    w: 0.70710678
+  translation:
+    x: -0.743
+    y: 3.03
+    z: 0.40
+header:
+  frame_id: imu
+child_frame_id: lidar_left

@@ -1,0 +1,36 @@
+$cmd,output,usb0,rawimub,0.010*ff
+$cmd,output,usb0,inspvab,0.010*ff
+$cmd,output,usb0,inspvaxb,0.010*ff
+$cmd,output,usb0,gpgga,1*ff
+$cmd,through,usb0,bestposb,1.000*ff
+$cmd,through,usb0,rangeb,1.000*ff
+$cmd,through,usb0,gpsephemb,1.000*ff
+$cmd,through,usb0,gloephemerisb,1.000*ff
+$cmd,through,usb0,bdsephemerisb,1.000*ff
+$cmd,through,usb0,headingb,1.000*ff
+$cmd,set,localip,192,168,1,114*ff
+$cmd,set,localmask,255,255,255,0*ff
+$cmd,set,localgate,192,168,1,1*ff
+$cmd,set,netipport,203,107,45,154,8002*ff
+$cmd,set,netuser,qianxun1234:abc123*ff
+$cmd,set,mountpoint,RTCM32_GGB*ff
+$cmd,set,ntrip,enable,enable*ff
+$cmd,set,udpserver0,192,168,1,2,3000*ff
+$cmd,set,udpserver1,192,168,1,2,2001*ff
+$cmd,set,udpport,8000,8001*ff
+$cmd,set,tftpport,69*ff
+$cmd,set,net0,rtk*ff
+$cmd,set,navmode,FineAlign,off*ff
+$cmd,set,navmode,coarsealign,off*ff
+$cmd,set,navmode,dynamicalign,on*ff
+$cmd,set,navmode,gnss,double*ff
+$cmd,set,navmode,carmode,on*ff
+$cmd,set,navmode,dmicali,off*ff
+$cmd,set,navmode,zupt,on*ff
+$cmd,set,navmode,firmwareindex,0*ff
+$cmd,set,leverarm,gnss,0.000,0.443,0.823*ff
+$cmd,set,headoffset,0.0000*ff
+ppscontrol enable positive 1.0 10000
+log com3 gprmc on time 1 0.25
+$cmd,save,config*ff
+
