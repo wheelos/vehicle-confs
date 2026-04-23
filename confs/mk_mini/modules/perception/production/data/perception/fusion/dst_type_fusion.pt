@@ -39,7 +39,7 @@ lidar_params {
 }
 
 lidar_params {
-  name: "lidar16_back"
+  name: "base_link"
   reliability: 0.3
   reliability_for_unknown: 0.1
 }

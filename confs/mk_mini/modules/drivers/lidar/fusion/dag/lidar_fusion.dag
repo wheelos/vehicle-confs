@@ -5,7 +5,6 @@ module_config {
       config {
         name : "lidar_fusion"
         config_file_path : "/apollo/modules/drivers/lidar/fusion/conf/lidar_fusion_config.pb.txt"
-        readers {channel: "/apollo/sensor/lidar/left/PointCloud2"}
       }
     }
 }

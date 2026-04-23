@@ -1,7 +1,7 @@
 data {
     format: HUACE_TEXT
     serial {
-        device: "/dev/ttyUSB0"
+        device: "/dev/ttyUSB4"
         baud_rate: 460800
     }
 }
@@ -12,8 +12,8 @@ rtk_from {
        address: "39.107.207.235"
        port: 8002
        mount_point: "AUTO"
-       user: "qxwran0015"
-       password: "aba4914"
+       user: "qxymvr001"
+       password: "c3e76ce"
        timeout_s: 5
     }
     push_location: true

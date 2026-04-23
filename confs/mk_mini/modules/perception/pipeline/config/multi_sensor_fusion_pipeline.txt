@@ -7,7 +7,7 @@ stage_config: {
   enabled: true
 
   all_latest_fusion_config: {
-    main_sensor: "lidar16_back"
+    main_sensor: "base_link"
     use_lidar: true
     use_radar: true
     use_camera: true

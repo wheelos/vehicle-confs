@@ -1,5 +1,5 @@
 max_constraint_interval : 0.25
-high_precision_constraint_interval: 0.10
+# high_precision_constraint_interval: 0.10
 longitudinal_boundary_bound : 2.0
 max_lateral_boundary_bound : 0.5
 min_lateral_boundary_bound : 0.1

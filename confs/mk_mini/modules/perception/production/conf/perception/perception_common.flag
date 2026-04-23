@@ -56,17 +56,17 @@
 # sensor to novatel frame id.
 # type: string
 # default:
---obs_sensor2novatel_tf2_frame_id=imu
+--obs_sensor2vehicle_tf2_frame_id=imu
 
 # novatel to world frame id.
 # type: string
 # default:
---obs_novatel2world_tf2_frame_id=world
+--obs_novatel2world_tf2_frame_id=map
 
 # novatel to world child frame id.
 # type: string
 # default:
---obs_novatel2world_tf2_child_frame_id=imu
+--obs_vehicle2world_tf2_child_frame_id=imu
 
 # query Cyber TF buffer size in second.
 # type: double
@@ -96,7 +96,7 @@
 # classification score threshold
 # type: double
 # default: 0.5
---score_threshold=0.3
+--score_threshold=0.5
 
 # enable ground removal
 # type: bool

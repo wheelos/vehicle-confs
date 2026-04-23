@@ -17,7 +17,7 @@ gps_cov_threshold: 2.0                        # m^2, threshold for using GPS dat
 pose_cov_threshold: 25.0                      # m^2, threshold for using GPS data
 
 # Export settings
-save_pcd: false                         
+save_pcd: false
 save_pcd_directory: "/Downloads/LOAM/"        # in your home folder, starts and ends with "/". Warning: the code deletes "LOAM" folder then recreates it. See "mapOptimization" for implementation
 
 # Sensor Settings
@@ -52,7 +52,7 @@ mapping_process_interval: 0.2                  # seconds, regulate mapping frequ
 # Surrounding map
 surrounding_key_frame_adding_dist_threshold: 1.0   # meters, regulate keyframe adding threshold
 surrounding_key_frame_adding_angle_threshold: 0.2  # radians, regulate keyframe adding threshold
-surrounding_key_frame_density: 0.1               # meters, downsample surrounding keyframe poses   
+surrounding_key_frame_density: 0.1               # meters, downsample surrounding keyframe poses
 surrounding_key_frame_search_radius: 5.0         # meters, within n meters scan-to-map optimization (when loop closure disabled)
 surrounding_key_frame_map_leaf_size_indoor: 0.2           # downsample local map point cloud
 surrounding_key_frame_map_leaf_size_outdoor: 0.4
@@ -64,7 +64,7 @@ surrounding_key_frame_size: 50                   # submap size (when loop closur
 history_key_frame_search_radius: 15.0             # meters, key frame that is within n meters from current pose will be considerd for loop closure
 history_key_frame_search_time_diff: 10.0           # seconds, key frame that is n seconds older will be considered for loop closure
 history_key_frame_search_num: 25                  # number of hostory key frames will be fused into a submap for loop closure
-loop_closure_icp_surf_leaf_size: 0.5               # downsample icp point cloud  
+loop_closure_icp_surf_leaf_size: 0.5               # downsample icp point cloud
 history_key_frame_fitness_score: 0.3              # icp threshold, the smaller the better alignment
 
 # Visualization
@@ -122,5 +122,5 @@ y_front_boundary: 14.3
 slam_mode: LOCALIZATION
 debug_scan2map_visualization: true
 tf_enable: true
-sensor_using_system_time: false
+sensor_using_system_time: true
 final_localization_using_kalman_filter: false

@@ -28,7 +28,7 @@ stage_config: {
   }
 
   mlf_engine_config: {
-    main_sensor: "lidar16_back"
+    main_sensor: "base_link"
     use_histogram_for_match: true
     histogram_bin_size: 10
     output_predict_objects: false

@@ -2,6 +2,7 @@ cyber_modules {
   key: "Vanjee Lidar"
   value: {
     dag_files: "/apollo/modules/drivers/lidar/vanjeelidar/dag/vanjeelidar.dag"
+    dag_files: "/apollo/modules/drivers/lidar/fusion/dag/lidar_fusion.dag"
   }
 }
 cyber_modules {
