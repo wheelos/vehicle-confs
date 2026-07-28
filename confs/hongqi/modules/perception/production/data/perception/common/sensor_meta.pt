@@ -1,0 +1,59 @@
+sensor_meta {
+    name: "base_link"
+    type: VELODYNE_64
+    orientation: PANORAMIC
+}
+
+sensor_meta {
+    name: "backward"
+    type: MONOCULAR_CAMERA
+    orientation: REAR
+}
+
+sensor_meta {
+    name: "leftbackward"
+    type: MONOCULAR_CAMERA
+    orientation: LEFT_BACKWARD
+}
+
+sensor_meta {
+    name: "rightbackward"
+    type: MONOCULAR_CAMERA
+    orientation: RIGHT_BACKWARD
+}
+
+sensor_meta {
+    name: "traffic"
+    type: MONOCULAR_CAMERA
+    orientation: FRONT
+}
+
+sensor_meta {
+    name: "obstacle"
+    type: MONOCULAR_CAMERA
+    orientation: FRONT
+}
+
+sensor_meta {
+    name: "wide"
+    type: MONOCULAR_CAMERA
+    orientation: FRONT
+}
+
+sensor_meta {
+    name: "narrow"
+    type: MONOCULAR_CAMERA
+    orientation: FRONT
+}
+
+sensor_meta {
+    name: "leftforward"
+    type: MONOCULAR_CAMERA
+    orientation: LEFT_FORWARD
+}
+
+sensor_meta {
+    name: "rightforward"
+    type: MONOCULAR_CAMERA
+    orientation: RIGHT_FORWARD
+}

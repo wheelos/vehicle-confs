@@ -6,9 +6,23 @@ extrinsic_file {
 }
 
 extrinsic_file {
-    frame_id: "imu"
+    frame_id: "base_link"
     child_frame_id: "hesai_main_front"
     file_path: "/apollo/modules/transform/params/hesai_main_front_extrinsics.yaml"
+    enable: true
+}
+
+extrinsic_file {
+    frame_id: "imu"
+    child_frame_id: "base_link"
+    file_path: "/apollo/modules/transform/params/base_link_extrinsics.yaml"
+    enable: true
+}
+
+extrinsic_file {
+    frame_id: "model_lidar"
+    child_frame_id: "hesai_main_front"
+    file_path: "/apollo/modules/transform/params/model_extrinsics.yaml"
     enable: true
 }
 

@@ -1,0 +1,13 @@
+transform:
+  rotation:
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  translation:
+    x: 0.0
+    y: 0.0
+    z: 1.0
+header:
+  frame_id: model_lidar
+child_frame_id: hesai_main_front
