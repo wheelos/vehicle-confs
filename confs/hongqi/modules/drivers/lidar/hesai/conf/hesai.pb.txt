@@ -1,0 +1,19 @@
+config_base {
+  scan_channel: "/apollo/sensor/hesai/main_front/Scan"
+  point_cloud_channel: "/apollo/sensor/hesai/main_front/PointCloud2"
+  frame_id: "hesai_main_front"
+
+  # sample ONLINE_LIDAR, RAW_PACKET
+  source_type: ONLINE_LIDAR
+}
+
+udp_port: 2368
+ptc_port: 9347
+device_ip: "192.168.20.13"
+host_ip: "0.0.0.0"
+correction_file_path: "modules/drivers/lidar/hesai/correction/angle_correction/Pandar40P_Angle_Correction_File.csv"
+# firetimes_path: "modules/drivers/lidar/hesai/correction/firetime_correction/AT128_test_firetime_correction.dat"
+source_type: 1 # The type of data source, 1: real-time lidar connection, 2: pcap, 3: from apollo record
+pcap_path: "/apollo/data/hesai.pcap"
+frame_start_azimuth: -1
+convert_thread_nums: 2

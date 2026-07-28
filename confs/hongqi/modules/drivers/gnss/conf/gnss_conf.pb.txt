@@ -1,0 +1,36 @@
+
+data {
+    format: NOVATEL_BINARY
+    tcp {
+        address: "192.168.10.4"
+        port: 2000
+    }
+}
+
+comment rtk from before network connection is enable
+# rtk_from {
+#     format: RTCM_V3
+#     ntrip {
+#        address: "39.107.207.235"
+#        port: 8002
+#        mount_point: "AUTO"
+#        user: "qxwran006"
+#        password: "846e0bb"
+#        timeout_s: 5
+#    }
+#    push_location: true
+# }
+
+rtk_to {
+    format: NOVATEL_BINARY
+    tcp {
+        address: "192.168.10.4"
+        port: 2002
+    }
+}
+
+rtk_solution_type: RTK_RECEIVER_SOLUTION
+imu_type: G320N
+proj4_text: "+proj=utm +zone=49 +ellps=WGS84 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs"
+
+wheel_parameters: "SETWHEELPARAMETERS 100 1 1\r\n"
