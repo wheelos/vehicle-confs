@@ -123,7 +123,7 @@ full_stop_max_brake: 15
 path_remain:0.15
 pitch_path_remain_param: 9.0
 
-enable_anti_slip: true
+enable_anti_slip: false
 anti_slip_controller_conf_file: "/apollo/modules/control/conf/anti_slip_conf.pb.txt"
 anti_slip_params_pipeline_file: "/apollo/modules/control/conf/anti_slip_params_pipeline.pb.txt"
 anti_slip_calibration_table_file: "/apollo/modules/control/conf/calibration_table.pb.txt"
