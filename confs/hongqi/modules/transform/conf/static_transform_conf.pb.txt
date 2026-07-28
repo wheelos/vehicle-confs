@@ -1,0 +1,21 @@
+extrinsic_file {
+    frame_id: "localization"
+    child_frame_id: "imu"
+    file_path: "/apollo/modules/transform/params/imu_localization_extrinsics.yaml"
+    enable: true
+}
+
+extrinsic_file {
+    frame_id: "imu"
+    child_frame_id: "hesai_main_front"
+    file_path: "/apollo/modules/transform/params/hesai_main_front_extrinsics.yaml"
+    enable: true
+}
+
+# TODO(ALL): all camera need to be calibrated, including extrinsic and intrinsic.
+# extrinsic_file {
+#     frame_id: "hesai_main_front"
+#     child_frame_id: "narrow"
+#     file_path: "/apollo/modules/transform/params/camera_narrow_extrinsics.yaml"
+#     enable: true
+# }

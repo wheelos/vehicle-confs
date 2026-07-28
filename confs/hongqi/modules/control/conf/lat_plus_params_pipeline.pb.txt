@@ -1,0 +1,41 @@
+params_declare {
+  config_name: "public_road_forward_param"
+  config_path: "lat_public_road_forward_param.pb.txt"
+}
+params_declare {
+  config_name: "public_road_forward_s_turn_param"
+  config_path: "lat_public_road_forward_s_turn_param.pb.txt"
+}
+params_declare {
+  config_name: "open_space_backward_param"
+  config_path: "lat_open_space_backward_param.pb.txt"
+}
+# HQEV_BDN does not provide a dedicated public-road reverse tune. Temporarily
+# reuse its open-space reverse tune while public-road reverse remains low-speed.
+params_declare {
+  config_name: "public_road_backward_param"
+  config_path: "lat_open_space_backward_param.pb.txt"
+}
+params_declare {
+  config_name: "edge_follow_public_road_forward_param"
+  config_path: "lat_edge_follow_public_road_forward_param.pb.txt"
+}
+params_declare {
+  config_name: "edge_follow_public_road_forward_s_turn_param"
+  config_path: "lat_edge_follow_public_road_forward_s_turn_param.pb.txt"
+}
+# The controller distinguishes left/right edge-follow turns, while the supplied
+# Hongqi profile provides one shared S-turn tune. Register both names against
+# that tune without changing the controller's selection logic.
+params_declare {
+  config_name: "edge_follow_public_road_forward_sl_turn_param"
+  config_path: "lat_edge_follow_public_road_forward_s_turn_param.pb.txt"
+}
+params_declare {
+  config_name: "edge_follow_public_road_forward_sr_turn_param"
+  config_path: "lat_edge_follow_public_road_forward_s_turn_param.pb.txt"
+}
+params_declare {
+  config_name: "open_space_forward_param"
+  config_path: "lat_open_space_forward_param.pb.txt"
+}
