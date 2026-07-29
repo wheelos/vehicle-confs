@@ -2,7 +2,7 @@ camera_names: "obstacle,rightforward,leftforward,backward,leftbackward,rightback
 input_camera_channel_names : "/apollo/sensor/camera/camera_obstacle/image,/apollo/sensor/camera/camera_rightforward/image,/apollo/sensor/camera/camera_leftforward/image,/apollo/sensor/camera/camera_backward/image,/apollo/sensor/camera/camera_leftbackward/image,/apollo/sensor/camera/camera_rightbackward/image"
 timestamp_offset : 0.0
 input_lidar_channel : "/apollo/sensor/lidar/fusion/PointCloud2"
-lidar_frame_id : "base_link"
+lidar_frame_id : "hesai_main_front"
 max_lidar_camera_delay_ms : 200.0
 lidar_sweeps_num : 10
 max_aggregated_lidar_points : 300000

@@ -1,0 +1,17 @@
+header:
+  seq: 0
+  stamp:
+    secs: 0
+    nsecs: 0
+  frame_id: hesai_main_front
+child_frame_id: obstacle
+transform:
+  translation:
+    x: -0.00475453292289
+    y: 1.72200568478
+    z: 1.49491291905
+  rotation:
+    x: -0.7040739283826507
+    y: 0.0007300540164189794
+    z: 0.0079485430104129125
+    w: 0.71008181997356246

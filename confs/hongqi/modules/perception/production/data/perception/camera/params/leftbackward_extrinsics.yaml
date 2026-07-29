@@ -1,0 +1,17 @@
+header:
+  seq: 0
+  stamp:
+    secs: 0
+    nsecs: 0
+  frame_id: hesai_main_front
+child_frame_id: leftbackward
+transform:
+  translation:
+    x: -0.483058131052
+    y: 1.04852047718
+    z: 1.56210154484
+  rotation:
+    x: -0.40916009854515367
+    y: -0.56768059726471909
+    z: 0.58055976060837589
+    w: 0.41626568151847104
