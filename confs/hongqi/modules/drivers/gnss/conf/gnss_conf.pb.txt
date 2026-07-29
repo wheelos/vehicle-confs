@@ -31,6 +31,6 @@ rtk_to {
 
 rtk_solution_type: RTK_RECEIVER_SOLUTION
 imu_type: G320N
-proj4_text: "+proj=utm +zone=49 +ellps=WGS84 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs"
+proj4_text: "+proj=utm +zone=50 +ellps=WGS84 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs"
 
 wheel_parameters: "SETWHEELPARAMETERS 100 1 1\r\n"
