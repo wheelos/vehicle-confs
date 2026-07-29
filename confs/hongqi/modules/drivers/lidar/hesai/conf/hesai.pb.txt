@@ -17,3 +17,5 @@ source_type: 1 # The type of data source, 1: real-time lidar connection, 2: pcap
 pcap_path: "/apollo/data/hesai.pcap"
 frame_start_azimuth: -1
 convert_thread_nums: 2
+enable_transform_param: true
+transform_yaw: 1.5707963267948966
