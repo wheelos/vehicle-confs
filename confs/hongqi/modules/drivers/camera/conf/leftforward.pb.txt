@@ -24,3 +24,4 @@ channel_name: "/apollo/sensor/camera/camera_leftforward/image"
 device_wait_ms: 2000
 spin_rate: 200
 output_type: RGB
+adv_trigger: true
