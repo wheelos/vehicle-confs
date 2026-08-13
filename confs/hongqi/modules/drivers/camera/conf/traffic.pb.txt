@@ -1,4 +1,4 @@
-camera_dev: "/dev/video3"
+camera_dev: "/dev/video7"
 frame_id: "traffic"  # 与摄像头物理位置对应
 pixel_format: "yuyv"
 io_method: IO_METHOD_MMAP

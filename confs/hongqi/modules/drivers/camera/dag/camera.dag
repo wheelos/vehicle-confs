@@ -20,13 +20,13 @@ module_config {
     # }
 
     #================ Obstacle Camera (6mm) ================
-    # components {
-    #     class_name : "CameraComponent"
-    #     config {
-    #         name : "obstacle"
-    #         config_file_path : "/apollo/modules/drivers/camera/conf/obstacle.pb.txt"
-    #     }
-    # }
+    components {
+        class_name : "CameraComponent"
+        config {
+            name : "obstacle"
+            config_file_path : "/apollo/modules/drivers/camera/conf/obstacle.pb.txt"
+        }
+    }
 
     #================ Traffic Camera (25mm) ================
     # components {
@@ -38,40 +38,40 @@ module_config {
     # }
 
     #================ RightForward Camera (2.3mm) ================
-    # components {
-    #     class_name : "CameraComponent"
-    #     config {
-    #         name : "rightforward"
-    #         config_file_path : "/apollo/modules/drivers/camera/conf/rightforward.pb.txt"
-    #     }
-    # }
+    components {
+        class_name : "CameraComponent"
+        config {
+            name : "rightforward"
+            config_file_path : "/apollo/modules/drivers/camera/conf/rightforward.pb.txt"
+        }
+    }
 
     #================ RightBackward Camera (4.1mm) ================
-    # components {
-    #     class_name : "CameraComponent"
-    #     config {
-    #         name : "rightbackward"
-    #         config_file_path : "/apollo/modules/drivers/camera/conf/rightbackward.pb.txt"
-    #     }
-    # }
+    components {
+        class_name : "CameraComponent"
+        config {
+            name : "rightbackward"
+            config_file_path : "/apollo/modules/drivers/camera/conf/rightbackward.pb.txt"
+        }
+    }
 
     #================ Backward Camera (6mm) ================
-    # components {
-    #     class_name : "CameraComponent"
-    #     config {
-    #         name : "backward"
-    #         config_file_path : "/apollo/modules/drivers/camera/conf/backward.pb.txt"
-    #     }
-    # }
+    components {
+        class_name : "CameraComponent"
+        config {
+            name : "backward"
+            config_file_path : "/apollo/modules/drivers/camera/conf/backward.pb.txt"
+        }
+    }
 
     #================ LeftBackward Camera (4.1mm) ================
-    # components {
-    #     class_name : "CameraComponent"
-    #     config {
-    #         name : "leftbackward"
-    #         config_file_path : "/apollo/modules/drivers/camera/conf/leftbackward.pb.txt"
-    #     }
-    # }
+    components {
+        class_name : "CameraComponent"
+        config {
+            name : "leftbackward"
+            config_file_path : "/apollo/modules/drivers/camera/conf/leftbackward.pb.txt"
+        }
+    }
 
     #================ LeftForward Camera (2.3mm) ================
     components {

@@ -8,18 +8,19 @@ data {
 }
 
 comment rtk from before network connection is enable
-# rtk_from {
-#     format: RTCM_V3
-#     ntrip {
-#        address: "39.107.207.235"
-#        port: 8002
-#        mount_point: "AUTO"
-#        user: "qxwran006"
-#        password: "846e0bb"
-#        timeout_s: 5
-#    }
-#    push_location: true
-# }
+
+rtk_from {
+    format: RTCM_V3
+    ntrip {
+        address: "120.253.226.97"
+        port: 8002
+        mount_point: "RTCM33_GRCEJ"
+        user: "cvsh1602"
+        password: "732dmmy9"
+        timeout_s: 5
+    }
+    push_location: true
+}
 
 rtk_to {
     format: NOVATEL_BINARY

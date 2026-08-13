@@ -1,4 +1,4 @@
-camera_dev: "/dev/video7"
+camera_dev: "/dev/video5"
 frame_id: "leftbackward"  # 与摄像头物理位置对应
 pixel_format: "yuyv"
 io_method: IO_METHOD_MMAP
