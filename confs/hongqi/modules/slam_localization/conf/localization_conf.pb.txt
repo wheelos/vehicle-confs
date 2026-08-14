@@ -128,6 +128,6 @@ tf_enable: true
 universal_noise_std: 0.15
 final_localization_using_kalman_filter: false
 
-use_fusion_pose_as_prior: true                # using localization_intergrate as initial guess
+use_fusion_pose_as_prior: false                # using localization_intergrate as initial guess
 check_debug_icp_score_after_opt: true         # should always true
 icp_threshold_change_slam_to_rtk: 0.2         # something like risk score, based on icp score and cov_
