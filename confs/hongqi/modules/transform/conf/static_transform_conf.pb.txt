@@ -20,8 +20,8 @@ extrinsic_file {
 }
 
 extrinsic_file {
-    frame_id: "model_lidar"
-    child_frame_id: "hesai_main_front"
+    frame_id: "hesai_main_front"
+    child_frame_id: "model_lidar"
     file_path: "/apollo/modules/transform/params/model_extrinsics.yaml"
     enable: true
 }
