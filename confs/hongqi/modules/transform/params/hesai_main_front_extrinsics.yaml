@@ -1,13 +1,13 @@
 transform:
   rotation:
-    x: 0.00533
-    y: -0.00430
-    z: 0.69233
-    w: 0.72155
+    x: 0.005328402
+    y: -0.004298136
+    z: 0.692327586
+    w: 0.721550863
   translation:
-    x: -0.0476
-    y: 1.7669
-    z: 1.8678
+    x: -0.047556845
+    y: 1.766893102
+    z: 1.867831946
 header:
   frame_id: base_link
 child_frame_id: hesai_main_front
