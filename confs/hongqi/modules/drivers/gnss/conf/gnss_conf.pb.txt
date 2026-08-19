@@ -15,8 +15,8 @@ rtk_from {
         address: "120.253.226.97"
         port: 8002
         mount_point: "RTCM33_GRCEJ"
-        user: "cvsh1602"
-        password: "732dmmy9"
+        user: "cxwt003"
+        password: "nuncckvu"
         timeout_s: 5
     }
     push_location: true
