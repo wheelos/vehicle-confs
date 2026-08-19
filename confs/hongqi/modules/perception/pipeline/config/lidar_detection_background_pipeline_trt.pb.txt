@@ -42,7 +42,7 @@ stage_config: {
   pointcloud_roi_filter_config: {
     range: 120.0
     cell_size: 0.25
-    extend_dist: 0.0
+    extend_dist: 1.0
     no_edge_table: false
     set_roi_service: true
   }
@@ -183,7 +183,7 @@ stage_config: {
 
 stage_config: {
   stage_type: GRAPH_CLUSTER_SEGMENTER
-  enabled: true
+  enabled: false
 
   graph_cluster_segmenter_config: {
     # Use the foreground-residual cloud inside the detection ROI.
