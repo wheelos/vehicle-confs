@@ -20,6 +20,7 @@ rtk_from {
         timeout_s: 5
     }
     push_location: true
+    is_data_stream: true
 }
 
 rtk_to {
