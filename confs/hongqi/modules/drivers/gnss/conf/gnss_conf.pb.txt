@@ -20,7 +20,6 @@ rtk_from {
         timeout_s: 5
     }
     push_location: true
-    is_data_stream: true
 }
 
 rtk_to {
@@ -29,6 +28,7 @@ rtk_to {
         address: "192.168.10.4"
         port: 2002
     }
+    is_data_stream: true
 }
 
 rtk_solution_type: RTK_RECEIVER_SOLUTION
