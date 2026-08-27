@@ -30,13 +30,6 @@ cyber_modules {
 cyber_modules {
   key: "Localization"
   value: {
-    dag_files: "/apollo/modules/localization/dag/dag_streaming_msf_localization.dag"
-  }
-}
-
-cyber_modules {
-  key: "SLAM Localization"
-  value: {
     dag_files: "/apollo/modules/slam_localization/dag/transform_fusion.dag"
     dag_files: "/apollo/modules/slam_localization/dag/imu_preintergration.dag"
     dag_files: "/apollo/modules/slam_localization/dag/image_projection.dag"
@@ -83,12 +76,5 @@ cyber_modules {
   key: "Transform"
   value: {
     dag_files: "/apollo/modules/transform/dag/static_transform.dag"
-  }
-}
-
-cyber_modules {
-  key: "TaskManager"
-  value: {
-    dag_files: "/apollo/modules/task_manager/dag/task_manager.dag"
   }
 }
