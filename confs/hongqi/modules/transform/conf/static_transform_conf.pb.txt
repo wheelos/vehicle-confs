@@ -29,7 +29,42 @@ extrinsic_file {
 # TODO(ALL): all camera need to be calibrated, including extrinsic and intrinsic.
 # extrinsic_file {
 #     frame_id: "hesai_main_front"
-#     child_frame_id: "narrow"
-#     file_path: "/apollo/modules/transform/params/camera_narrow_extrinsics.yaml"
+#     child_frame_id: "obstacle"
+#     file_path: "/apollo/modules/perception/production/data/perception/camera/params/obstacle_extrinsics.yaml"
+#     enable: true
+# }
+
+# extrinsic_file {
+#     frame_id: "hesai_main_front"
+#     child_frame_id: "backward"
+#     file_path: "/apollo/modules/perception/production/data/perception/camera/params/backward_extrinsics.yaml"
+#     enable: true
+# }
+
+# extrinsic_file {
+#     frame_id: "hesai_main_front"
+#     child_frame_id: "leftbackward"
+#     file_path: "/apollo/modules/perception/production/data/perception/camera/params/leftbackward_extrinsics.yaml"
+#     enable: true
+# }
+
+# extrinsic_file {
+#     frame_id: "hesai_main_front"
+#     child_frame_id: "leftforward"
+#     file_path: "/apollo/modules/perception/production/data/perception/camera/params/leftforward_extrinsics.yaml"
+#     enable: true
+# }
+
+# extrinsic_file {
+#     frame_id: "hesai_main_front"
+#     child_frame_id: "rightbackward"
+#     file_path: "/apollo/modules/perception/production/data/perception/camera/params/rightbackward_extrinsics.yaml"
+#     enable: true
+# }
+
+# extrinsic_file {
+#     frame_id: "hesai_main_front"
+#     child_frame_id: "rightforward"
+#     file_path: "/apollo/modules/perception/production/data/perception/camera/params/rightforward_extrinsics.yaml"
 #     enable: true
 # }
