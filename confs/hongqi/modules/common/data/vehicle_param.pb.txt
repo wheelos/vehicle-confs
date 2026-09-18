@@ -5,11 +5,11 @@ vehicle_param {
   }
 
   # Required geometry (metres):
-  front_edge_to_center: 3.78
+  front_edge_to_center: 3.81
   back_edge_to_center: 0.87
   left_edge_to_center: 1.007
   right_edge_to_center: 1.007
-  length: 4.49
+  length: 4.68
   width: 2.014
   height: 1.98
   min_turn_radius: 5.5
